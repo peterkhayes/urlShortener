@@ -1,7 +1,7 @@
 <h2>Sign Up</h2>
-<input type = "text" placeholder = "Username" ng-model="user.username">
-<input type = "password" placeholder = "Password" ng-model="user.password">
+<input type = "text" placeholder = "Username" ng-model="user.username" ng-enter="signup()">
+<input type = "password" placeholder = "Password" ng-model="user.password" ng-enter="signup()">
 <input type = "button" ng-click = "signup()" value = "Sign up">
-<a href="#/login">Already a user?  Buy some crack here!</a>
+<a href="#/login" class='bluelink'>Already a user?  Buy some crack here!</a>
 <div class="message error" ng-show="error">{{error}}</div>
 <img class="spinner" ng-show="working" src="/spiffygif_46x46.gif">

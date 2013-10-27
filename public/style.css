@@ -22,6 +22,10 @@ h1 {
   margin-bottom: 10px;
 }
 
+#container {
+  padding:0 20px;
+}
+
 .loginButton, .signupButton {
   position: absolute;
   top: 10px;
@@ -143,7 +147,7 @@ form {
   margin: 10px;
 }
 
-form input[type=text] {
+input[type=text], input[type=password]{
   width: 360px;
   display: block;
   font-size: 13px;
@@ -179,4 +183,10 @@ img.spinner {
 .statsButton:hover {
   border-color: #66F;
   color: #66F;
-};
+}
+
+.blueLink {
+  text-decoration: underline;
+  color: #55F;
+}
+

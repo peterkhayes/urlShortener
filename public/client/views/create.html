@@ -1,6 +1,6 @@
 <div>  
-  <input class="text" type="text" ng-model="url"> 
-  <input type="button" value="Shorten" ng-click="shorten(url)"> 
+  <input class="text" type="text" ng-model="url" ng-enter="shorten()"> 
+  <input type="button" value="Shorten" ng-click="shorten()"> 
 </div>
 <div class="message error" ng-show="message">{{message}}</div>
 <div class="link" ng-show="link">
