@@ -1,0 +1,17 @@
+<div class="optionsBar" ng-init="sorting='visits'; sortReverse=true">
+	<div class = "label left">Sort By: </div>
+	<div class = "order left" ng-click = "sorting='visits'; sortReverse=true">Visit Count</div>
+	<div class = "order left" ng-click = "sorting='updated_at'; sortReverse=false">Last Visit</div>
+	<div class = "order left" ng-click = "sorting='title'; sortReverse=false">Name</div>
+	<input class="search right" placeholder="Search for shortened links..." ng-model = "searchQuery"></input>
+</div>
+<div class="link" ng-repeat="link in links | filter:searchQuery | orderBy:sorting:sortReverse">
+	<img src="/redirect_icon.png"/> 
+  <div class="info"> 
+    <div class="visits right"><span class="count">{{link.visits}}</span>Visits</div> 
+    <div class="dateAdded right"><span class="count">{{link.timeAgo}}</span>{{link.timeUnits}}</div> 
+    <a ng-href="#/stats/{{link.code}}" class="statsButton right">Stats</a> 
+    <a ng-href="{{link.base_url}}/{{link.code}}">{{link.base_url}}/{{link.code}}<div class="title">{{link.title}}</div> 
+    <div class="original">{{link.url}}</div></a> 
+  </div>
+<div>

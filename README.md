@@ -1,4 +1,3 @@
-shortly_angular
-===============
-
-A url-shortening service
+shortlyangular
+==============
+A url shortener in angular and sinatra

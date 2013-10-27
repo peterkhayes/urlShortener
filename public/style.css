@@ -1,0 +1,182 @@
+.left {
+  float:left;
+}
+.right {
+  float:right;
+}
+
+body {
+  margin: 0;
+  margin-top: 10px;
+  font-family: arial, sans-serif;
+}
+
+a {
+  color: #333;
+  font-size: 14px;
+  text-decoration: none;
+}
+
+h1 {
+  font-style: italic;
+  margin-bottom: 10px;
+}
+
+.loginButton, .signupButton {
+  position: absolute;
+  top: 10px;
+  padding: 10px;
+  border: 1px solid black;
+  cursor: pointer;
+}
+
+.loginButton {
+  right: 30px;
+}
+
+.signupButton {
+  right: 130px;
+}
+
+.loginButton:hover, .signupButton:hover {
+  color: #666;
+  border-color: #666;
+}
+
+.navigation {
+  width: 100%;
+  height: 40px;
+  background-color: #eee;
+}
+
+.navigation ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.navigation li a {
+  width: 100px;
+  height: 20px;
+  line-height: 20px;
+  padding: 10px;
+  display: block;
+  text-align: center;
+}
+
+.navigation li a:hover {
+  background-color: #ddd;
+}
+
+.navigation li a.selected {
+  background-color: #ccc;
+}
+
+.optionsBar {
+  font-size: 14px;
+  width: 100%;
+  height: 30px;
+  background-color: #e0eee0;
+}
+
+.optionsBar input {
+  width: 250px;
+  font-size: 12px;
+  margin: 5px;
+}
+
+.optionsBar .order, .optionsBar .label {
+  margin: 7px 0 0 40px;
+}
+
+.optionsBar .order {
+  cursor: pointer;
+}
+
+#container {
+  clear: both;
+  margin-top: 10px;
+}
+
+.link {
+  clear: both;
+  margin-bottom: 5px;
+  padding: 5px;
+  min-height: 50px;
+}
+
+.link:hover {
+  background-color: #efe;
+}
+
+.link img {
+  float: left;
+  margin: 0 5px;
+}
+
+.link .visits, .link .dateAdded {
+  margin-right: 10px;
+  margin-left: 20px;
+}
+
+.link .visits .count, .link .dateAdded .count {
+  display:block;
+  font-size: 26px;
+  font-weight: 600;
+  width:70px;
+}
+
+.link .title {
+  font-weight: 600;
+}
+
+.link .original {
+  color: #aaa;
+  font-size: 12px;
+}
+
+.link .info {
+  margin-left: 55px;
+}
+
+form {
+  margin: 10px;
+}
+
+form input[type=text] {
+  width: 360px;
+  display: block;
+  font-size: 13px;
+  padding: 5px;
+  margin-bottom: 5px;
+}
+
+.error {
+  background-color: #fee;
+  color: #a33;
+  padding: 10px;
+  margin: 0 10px;
+}
+
+img.spinner {
+  height: 1000px;
+  position: fixed;
+  left: 50%;
+  top: 50%;
+  margin-left: -500px;
+  margin-top: -500px;
+}
+
+.statsButton {
+  border: 1px solid #00C;
+  margin:13px;
+  padding:5px;
+  color:#00F;
+  font-size: 10px;
+  cursor: pointer;
+}
+
+.statsButton:hover {
+  border-color: #66F;
+  color: #66F;
+};

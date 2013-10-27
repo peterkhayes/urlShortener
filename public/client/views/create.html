@@ -1,0 +1,16 @@
+<div>  
+  <input class="text" type="text" ng-model="url"> 
+  <input type="button" value="Shorten" ng-click="shorten(url)"> 
+</div>
+<div class="message error" ng-show="message">{{message}}</div>
+<div class="link" ng-show="link">
+	<img src="/redirect_icon.png"/> 
+  <div class="info"> 
+    <div class="visits right"><span class="count">{{link.visits}}</span>Visits</div> 
+    <div class="dateAdded right"><span class="count">{{link.timeAgo}}</span>{{link.timeUnits}}</div> 
+    <a ng-href="#/stats/{{link.code}}" class="statsButton right">Stats</a> 
+    <a ng-href="{{link.base_url}}/{{link.code}}">{{link.base_url}}/{{link.code}}<div class="title">{{link.title}}</div> 
+    <div class="original">{{link.url}}</div></a> 
+  </div>
+<div>
+<img class="spinner" ng-show="working" src="/spiffygif_46x46.gif"> 

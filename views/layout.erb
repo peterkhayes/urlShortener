@@ -1,0 +1,21 @@
+<html ng-app="shortlyApp">
+<head>
+  <title>Shortly</title>
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.0.8/angular.min.js"></script>
+</head>
+<body>
+  <h1>Shortly</h1> 
+  <!-- <div class="logoutButton">Login</div> 
+  <div class="signupButton">Sign Up</div>  -->
+  <div class="navigation"> 
+  <ul> 
+    <li><a href="#" class="left">Links</a></li> 
+    <li><a href="#/create" class="create left">Shorten</a></li>  
+  </ul> 
+  </div> 
+  <div ng-view id="container">
+  </div>
+  <script src="client/app.js"></script>
+</body>
+</html>
